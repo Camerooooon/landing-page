@@ -1,0 +1,54 @@
+body {
+  background-color: #2c3e50;
+}
+
+.wrapper {
+  text-align: center;
+  margin-top:  10%;
+}
+
+input {
+  width: 50%;
+  border: 3px solid #ecf0f1;
+  padding: 20px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
+  background: none;
+  color: #ecf0f1;
+  border-radius: 10px;
+  transition: ease-in-out, background 0.3s ease-in-out;
+}
+
+input:focus {
+  background-color: #34495e;
+  outline: none;
+}
+
+input::placeholder {
+  color: #ecf0f1;
+}
+
+input::before {
+  background: none;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 50px;
+  color: #ecf0f1;
+}
+
+h2 {
+  display: inline;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  padding: 15px;
+  padding-bottom: 10px; /* For some reason I need to manually compensate for some weird padding issue */
+  color: #ecf0f1;
+}
+
+.selected {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  transition: ease-in-out, 0.2s ease-in-out;
+}
