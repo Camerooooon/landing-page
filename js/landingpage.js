@@ -8,9 +8,9 @@ document.onkeydown = function(e) {
   if (e.which == 13) {
 
     if (searchEngine == 0) {
-      window.location.href = "https://duckduckgo.com/?q=" + $("#searchBox").val();
-    } else if (searchEngine == 1) {
       window.location.href = "https://google.com/search?q=" + $("#searchBox").val();
+    } else if (searchEngine == 1) {
+      window.location.href = "https://duckduckgo.com/?q=" + $("#searchBox").val();
     } else if (searchEngine == 2) {
       window.location.href = "https://github.com/?q=" + $("#searchBox").val();
     } else {
