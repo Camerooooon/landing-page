@@ -1,5 +1,8 @@
+/* Some of this code does not get used. */
+/* TODO: remove unused code */
+
 body {
-  background-color: #2c3e50;
+  background-color: #1b2127;
 }
 
 .wrapper {
@@ -7,40 +10,79 @@ body {
   margin-top:  10%;
 }
 
-input {
-  width: 50%;
-  border: 3px solid #ecf0f1;
-  padding: 20px;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 20px;
-  background: none;
+.type-console {
+  text-align: left;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 5px;
+  height: 220px;
+  background-color: #12171b;
+  position: relative;
+}
+
+.console-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+a {
   color: #ecf0f1;
-  border-radius: 10px;
-  transition: ease-in-out, background 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.color-green {
+  color: #27b657;
+}
+
+.color-blue {
+  color: #27b6b6;
+}
+
+.color-red {
+  color: #b65027;
+}
+
+.color-purple {
+  color: #cc46cc;
+}
+
+.horizontal-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(132px, 1fr)); 
+}
+
+input {
+  background: none;
+  border: none;
+  font-family: monospace;
+  color: #ecf0f1;
+  width: 300px;
 }
 
 input:focus {
-  background-color: #34495e;
   outline: none;
 }
 
-input::placeholder {
+h1 {
+  font-family: monospace;
+  font-size: 50px;
   color: #ecf0f1;
 }
 
-input::before {
-  background: none;
-}
-
-h1 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 50px;
+p {
+  font-family: monospace;
   color: #ecf0f1;
 }
 
 h2 {
   display: inline;
-  font-family: 'Bebas Neue', cursive;
+  font-family: monospace;
   font-size: 30px;
   padding: 15px;
   padding-bottom: 10px; /* For some reason I need to manually compensate for some weird padding issue */

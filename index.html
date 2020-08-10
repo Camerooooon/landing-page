@@ -2,22 +2,48 @@
 <head>
   <title>Welcome back!</title>
   <link rel="stylesheet" type="text/css" href="css/landingpage.css"></link>
-
-  <!-- Cdns and stuff -->
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrapper">
-    <h1>Welcome Back!</h1>
-    <input id="searchBox" placeholder="What are you looking for today?"></input>
+    <h2 id="hello"></h2>
+    <p><span class="color-blue">T:</span> <span id="time-tracker">...</span></p>
+    <div class="type-console">
+      <ul class="horizontal-list">
+        <li>
+          <p class="color-green">Time Wasters</p>
+          <p><a href="https://reddit.com" name="type">Reddit</a></p>
+          <p><a href="https://youtube.com" name="type">Youtube</a></p>
+        </li>
+        <li>
+          <p class="color-blue">Code</p>
+          <p><a href="https://github.com" name="type">GitHub</a></p>
+          <p><a href="https://stackoverflow.com" name="type">Stack Overflow</a></p>
+        </li>
+        <li>
+          <p class="color-red">Outside</p>
+          <p><a href="https://google.com/search?q='Covid 19 death count'" name="type">Covid19</a></p>
+          <p><a href="about:blank" name="type">School</a></p><!-- about:blank for privacy reasons -->
+        </li>
+        <li>
+          <p class="color-purple">Reddit</p>
+          <p><a href="https://reddit.com/r/unixporn" name="type">r/unixporn</a></p>
+          <p><a href="https://reddit.com/r/usabilityporn" name="type">r/usabilityporn</a></p>
+          <p><a href="https://reddit.com/r/dankmemes" name="type">r/dankmemes</a></p>
+          <p><a href="https://reddit.com/r/startpages" name="type">r/startpages</a></p>
+        </li>
+      </ul>
+      <span class="console-input">
+        <p>
+          <span class="color-green" id="search-engine">cameron@google</span>:<span class="color-blue">~</span>$ 
+          <input type="text" id="search-input" autofocus autocomplete="off">
+        </p>
+      </span>
+    </div>
     <br>
-    <br>
-    <br>
-    <h2 id="google-engine">Google</h2>
-    <h2 id="duckduckgo-engine" class="selected">DuckDuckGo</h2>
-    <h2 id="github-engine">Github</h2>
-    <h2 id="youtube-engine">YouTube</h2>
+    <p><span class="color-purple">CA:</span> <span id="state-pandemic-tracker">...</span></p>
+    <p><span class="color-purple">US:</span> <span id="local-pandemic-tracker">...</span></p>
+    <p><span class="color-purple">WW:</span> <span id="pandemic-tracker">...</span></p>
   </div>
   <script src="js/landingpage.js"></script>
 <body>
